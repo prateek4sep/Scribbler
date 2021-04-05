@@ -8,6 +8,7 @@ var signInBtn  = document.getElementById("signInBtn");
 
 // Get the buttons to close the respective modals
 var closeSignUp = document.getElementById("closeSignUp");
+var closeSignIn = document.getElementById("closeSignIn");
 
 // Open the respective modals on click
 signUpBtn.onclick = function() {
@@ -23,9 +24,16 @@ closeSignUp.onclick = function() {
   signUpModal.style.display = "none";
 }
 
+closeSignIn.onclick = function() {
+  signInModal.style.display = "none";
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == signUpModal) {
     signUpModal.style.display = "none";
   }
+  if (event.target == signInModal) {
+      signInModal.style.display = "none";
+   }
 }
