@@ -1,17 +1,24 @@
-// Get the modal
+// Get the modals
 var signUpModal = document.getElementById("signUpModal");
+var signInModal = document.getElementById("signInModal");
 
-// Get the button to open the modal
+// Get the buttons to open the respective modals
 var signUpBtn  = document.getElementById("signUpBtn");
+var signInBtn  = document.getElementById("signInBtn");
 
-// Get the button to close the modal
+// Get the buttons to close the respective modals
 var closeSignUp = document.getElementById("closeSignUp");
 
+// Open the respective modals on click
 signUpBtn.onclick = function() {
   signUpModal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+signInBtn.onclick = function() {
+  signInModal.style.display = "block";
+}
+
+// When the user clicks on 'x', close the modal
 closeSignUp.onclick = function() {
   signUpModal.style.display = "none";
 }
