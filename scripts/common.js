@@ -2,9 +2,10 @@
 var signUpModal = document.getElementById("signUpModal");
 var signInModal = document.getElementById("signInModal");
 
-// Get the buttons to open the respective modals
+// Get the buttons/link to open the respective modals
 var signUpBtn  = document.getElementById("signUpBtn");
 var signInBtn  = document.getElementById("signInBtn");
+var signUpLink  = document.getElementById("signUpLink");
 
 // Get the buttons to close the respective modals
 var closeSignUp = document.getElementById("closeSignUp");
@@ -17,6 +18,11 @@ signUpBtn.onclick = function() {
 
 signInBtn.onclick = function() {
   signInModal.style.display = "block";
+}
+
+signUpLink.onclick = function() {
+  signInModal.style.display = "none";
+  signUpModal.style.display = "block";
 }
 
 // When the user clicks on 'x', close the modal
@@ -37,3 +43,4 @@ window.onclick = function(event) {
       signInModal.style.display = "none";
    }
 }
+
