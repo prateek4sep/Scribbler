@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    width: 100%
+}
+
 body {
     background-image: url(../images/background.jpg);
     height: 100%;
@@ -25,12 +30,13 @@ body {
 }
 
 h4 {
-    margin-top: 5px;
-    font-weight:normal;
+    margin-top: 0px;
+    font-weight: normal;
 }
 
 h1 {
     font-weight:normal;
+    margin-bottom:0px;
 }
 
 #headerText {
@@ -39,45 +45,46 @@ h1 {
     align-items: flex-start;
     justify-content:flex-start;
     line-height: 0px;
-}
-
-.headerButton {
-    background-color: blue;
-    color: #fff;
-    margin: 7px;
-    font-size: 16px;
-    border: solid;
-    border: 2px;
-    border-style: solid;
-    padding-top:12px;
-    padding-bottom:12px;
-    padding-left:30px;
-    padding-right:30px;
-    border-color: silver;
+    padding-left: 10px;
 }
 
 #postButtonsContainer{
-  display: flex;
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    height: 90%;
+    width: 100%;
+    top: 0%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#signingButtonsContainer{
+    height: 10%;
+    padding: 10px;
 }
 
 .postButton{
     background-color: orange;
     color: black;
-    margin: 7px;
+    width: 150px; /* To make the buttons look equal in width. */
     font-size: 16px;
+}
+
+.headerButton {
+    background-color: blue;
+    color: #fff;
+    font-size: 14px; /* To make the buttons look equal in width. */
+    width: 100px;
+}
+
+.homepageButton{
+    margin: 7px;
     border: solid;
     border: 2px;
     border-style: solid;
-    padding-top:12px;
-    padding-bottom:12px;
-    padding-left:30px;
-    padding-right:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
     border-color: silver;
-    width:180px;
 }
