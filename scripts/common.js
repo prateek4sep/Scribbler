@@ -1,6 +1,7 @@
 // Get the modals
 var signUpModal = document.getElementById("signUpModal");
 var signInModal = document.getElementById("signInModal");
+var createPostModal = document.getElementById("createPostModal");
 
 // Get the buttons/link to open the respective modals
 var signUpBtn  = document.getElementById("signUpBtn");
@@ -41,6 +42,9 @@ window.onclick = function(event) {
   }
   if (event.target == signInModal) {
       signInModal.style.display = "none";
+   }
+   if (event.target == createPostModal) {
+         createPostModal.style.display = "none";
    }
 }
 
