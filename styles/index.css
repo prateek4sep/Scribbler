@@ -10,44 +10,6 @@ body {
     background-size: cover;
 }
 
-#header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#scribblerText {
-    font-family: 'Montez', cursive;
-    color: blue;
-    font-size: x-large;
-}
-
-#tagLine {
-    font-family: 'Ubuntu Mono', monospace;
-    color: black;
-    font-size: large;
-    font-weight: 200;
-}
-
-h4 {
-    margin-top: 0px;
-    font-weight: normal;
-}
-
-h1 {
-    font-weight:normal;
-    margin-bottom:0px;
-}
-
-#headerText {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content:flex-start;
-    line-height: 0px;
-    padding-left: 10px;
-}
-
 #postButtonsContainer{
     display: flex;
     height: 90%;
@@ -58,35 +20,11 @@ h1 {
     align-items: center;
 }
 
-#signingButtonsContainer{
-    height: 10%;
-    padding: 10px;
-}
-
 .postButton{
     background-color: orange;
     color: black;
     width: 150px; /* To make the buttons look equal in width. */
     font-size: 16px;
-}
-
-.headerButton {
-    background-color: blue;
-    color: #fff;
-    font-size: 14px; /* To make the buttons look equal in width. */
-    width: 100px;
-}
-
-.homepageButton {
-    margin: 7px;
-    border: solid;
-    border: 2px;
-    border-style: solid;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:20px;
-    padding-right:20px;
-    border-color: silver;
 }
 
 textarea {
