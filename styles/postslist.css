@@ -98,3 +98,25 @@ body {
 .delete:hover {
     color: dimgray;
 }
+
+#confirmDelete{
+   position: absolute; bottom:2px; left:10px;
+   width: 60px;
+}
+
+#cancelDelete {
+   position: absolute; bottom:2px; right:10px;
+   width: 60px;
+}
+
+.deleteModalContent {
+    display: flex;
+    justify-content: center;
+    width:22% !important;
+    height:15%;
+    margin: 5% auto; !important;
+    font-family: 'Arial';
+    font-size: 18px;
+    text-padding: 10px;
+    text-align: center;
+}
