@@ -2,12 +2,90 @@
 <html>
 
 <head>
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
     <!-- TODO: Include Font Awesome file here -->
+    <script src="https://use.fontawesome.com/f499a276b4.js"></script>
+
     <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/postslist.css">
+    <link rel="stylesheet" href="../styles/common.css">
 </head>
 
 <body>
     <!-- TODO: Include code for header here -->
+    <div id="header">
+        <div id=headerText>
+            <div id="scribblerText"><h1>ScriBBler</h1></div>
+            <div id="tagLine"><h4>Explore, Imagine, Create</h4></div>
+        </div>
+        <div id="signingButtonsContainer">
+            <button id="signUpBtn" class="headerButton homepageButton">Sign Up</button>
+            <button id="signInBtn" class="headerButton homepageButton">Sign In</button>
+        </div>
+    </div>
+
+    <!-- Sign Up modal  -->
+    <div id="signUpModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><span class="closeIcon" id="closeSignUp"><i>&times;</i></span></h3>
+                <h3 class="modal-heading">Get Started</h3>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="new-username">Username</label>
+                        <input type="text" class="form-control" id="new-username" placeholder="Enter your username" required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="new-password">Password</label>
+                        <input type="password" class="form-control" id="new-password" placeholder="Enter your password" required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Re-enter your password" required="true" />
+                    </div>
+                    <button type="submit" class="btn btn-block btn-success">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><span class="closeIcon" id="closeSignIn"><i>&times;</i></span></h3>
+                <h3 class="modal-heading">Welcome Back!</h3>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username" required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password" required="true" />
+                    </div>
+                    <button type="submit" class="btn btn-block btn-success">Sign In</button>
+                    <br>
+                    <p class="nonMember">Not a member? <a id="signUpLink">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
@@ -125,6 +203,8 @@
 
     </div>
     <!-- list of all posts ends here -->
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/index.js"></script>
 </body>
 
 </html>
