@@ -53,5 +53,6 @@ window.addEventListener('click', function(event) {
 
 // Header Logo redirect to Index
 headerText.onclick = function() {
-  location.href = "/Scribbler/index.html";
+  if(location.pathname.includes("post"))
+        location.href = location.pathname+"/../../index.html";
 }
