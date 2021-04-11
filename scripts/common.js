@@ -36,7 +36,7 @@ closeSignIn.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.addEventListener('click', function(event) {
   if (event.target == signUpModal) {
     signUpModal.style.display = "none";
   }
@@ -46,5 +46,5 @@ window.onclick = function(event) {
    if (event.target == createPostModal) {
          createPostModal.style.display = "none";
    }
-}
+});
 
