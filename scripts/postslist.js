@@ -5,12 +5,18 @@ var confirmDelete = document.getElementById("confirmDelete");
 var deleteIcons = document.getElementsByClassName("delete");
 var posts = document.getElementsByClassName("post");
 
+var ellipsisIcons = document.getElementsByClassName("ellipsis");
+
 var selectedPost = -1;
 
 // Open the modal on click, Creating a temporary scope to preserve i's value.
-for (var i = 0; i < deleteIcons.length; i++) (function(i){
+for (var i = 0; i < posts.length; i++) (function(i){
     deleteIcons[i].onclick = function() {
         deletePostModal.style.display = "block";
+        selectedPost = i;
+    }
+    ellipsisIcons[i].onclick = function() {
+        location.href = "./post.html";
         selectedPost = i;
     }
 })(i);
