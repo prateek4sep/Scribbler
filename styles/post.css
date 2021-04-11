@@ -93,24 +93,13 @@
     padding: 10px;
 }
 
-#postBodyEdit{
-    display: none;
-    font-size: medium;
-    border-style: solid;
-    border-color: pink;
-    width: 100%;
-    font-family: 'Arial';
-}
-
 #postBody{
     font-size: medium;
     font-family: 'Arial';
 }
 
-#postTitleEdit{
-    font-size: 26px;
-    display: none;
+.edit {
     border-style: solid;
     border-color: pink;
-    width: 100%;
+    border-width: thin;
 }
