@@ -12,6 +12,9 @@ var signUpLink  = document.getElementById("signUpLink");
 var closeSignUp = document.getElementById("closeSignUp");
 var closeSignIn = document.getElementById("closeSignIn");
 
+// Header Logo should redirect to index page
+var headerText = document.getElementById("headerText");
+
 // Open the respective modals on click
 signUpBtn.onclick = function() {
   signUpModal.style.display = "block";
@@ -48,3 +51,7 @@ window.addEventListener('click', function(event) {
    }
 });
 
+// Header Logo redirect to Index
+headerText.onclick = function() {
+  location.href = "../index.html";
+}
