@@ -1,10 +1,11 @@
+// Controls for Delete Post modal
 var deletePostModal = document.getElementById("deletePostModal");
 var cancelDelete = document.getElementById("cancelDelete");
 var confirmDelete = document.getElementById("confirmDelete");
 
+// On Card Controls for Posts: Delete and Redirection to corresponding post page
 var deleteIcons = document.getElementsByClassName("delete");
 var posts = document.getElementsByClassName("post");
-
 var ellipsisIcons = document.getElementsByClassName("ellipsis");
 
 var selectedPost = -1;
