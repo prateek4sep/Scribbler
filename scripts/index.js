@@ -24,3 +24,10 @@ closeCreatePost.onclick = function() {
 allPostsBtn.onclick = function() {
   location.href = "./html/postslist.html";
 }
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener('click', function(event) {
+   if (event.target == createPostModal) {
+         createPostModal.style.display = "none";
+   }
+});
