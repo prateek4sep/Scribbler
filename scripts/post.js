@@ -114,6 +114,7 @@ likedButton.onclick = function() {
   }
 }
 
+// On submitting a comment if not null, add to the top of the displaying container.
 commentButton.onclick = function() {
     var newCommentText = newComment.value;
     newComment.value = "";
@@ -123,6 +124,7 @@ commentButton.onclick = function() {
     }
 }
 
+// On Load, display the content corresponding to the selected stored in session storage before redirection.
 window.onload = function() {
     var sessionAuthor = sessionStorage.getItem("author");
     var sessionTitle = sessionStorage.getItem("postTitle");

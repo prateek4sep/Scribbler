@@ -3,6 +3,7 @@ html {
     width: 100%
 }
 
+/* Setting background for index page. */
 body {
     background-image: url(../images/background.jpg);
     height: 100%;
@@ -10,6 +11,7 @@ body {
     background-size: cover;
 }
 
+/* Create Post and All Posts button container. */
 #postButtonsContainer{
     display: flex;
     height: 90%;
@@ -20,6 +22,7 @@ body {
     align-items: center;
 }
 
+/* Create Post and All Posts class. */
 .postButton{
     position: relative; bottom:50px;
     background-color: orange;
@@ -28,20 +31,24 @@ body {
     font-size: 16px;
 }
 
+/* Create Post TextArea */
 textarea {
     background-color: #f1f1f1 !important;
 }
 
+/* Create Post Submit Container */
 .createPostSubmitContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Create Post Submit Button */
 #createPostSubmit {
     margin: 5px;
 }
 
+/* Create Post Modal Size Adjustment */
 #createPostModalContent {
     width:80%;
     height:72%;

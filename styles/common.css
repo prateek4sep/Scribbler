@@ -1,15 +1,18 @@
+/* Entire Header including Logo, sub-text, SignUp and Login. */
 #header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+/* Logo Text */
 #scribblerText {
     font-family: 'Montez', cursive;
     color: blue;
     font-size: x-large;
 }
 
+/* Sub Text */
 #tagLine {
     font-family: 'Ubuntu Mono', monospace;
     color: black;
@@ -17,16 +20,20 @@
     font-weight: 200;
 }
 
+/* For Sub Text */
 h4 {
     margin-top: 0px;
     font-weight: normal;
 }
 
+/* For Logo Text */
 h1 {
     font-weight:normal;
     margin-bottom:0px;
 }
 
+/*  Container having Logo and Sub-Text.
+    Added an additional cursor property to support redirection on index page onclick. */
 #headerText {
     display: flex;
     flex-direction: column;
@@ -37,11 +44,13 @@ h1 {
     cursor: pointer;
 }
 
+/* Container having SignUp and SignIn buttons. */
 #signingButtonsContainer{
     height: 10%;
     padding: 10px;
 }
 
+/* Class corresponding to all HomePage buttons including All Posts, Create Posts, Sign Up and Sign In. */
 .homepageButton {
     margin: 7px;
     border: solid;
@@ -54,6 +63,7 @@ h1 {
     border-color: silver;
 }
 
+/* Class corresponding to Sign Up and Sign In buttons. */
 .headerButton {
     background-color: blue;
     color: #fff;
@@ -61,6 +71,7 @@ h1 {
     width: 100px;
 }
 
+/* Customizing Standard Bootstrap Modal class. */
 .modal {
   display: none;
   position: fixed;
@@ -75,10 +86,12 @@ h1 {
   font-family: 'Arial';
 }
 
+/* For Modal Input element Labels. */
 label {
   font-family: 'Arial';
 }
 
+/* Customizing Standard Bootstrap Modal content. */
 .modal-content {
   background-color: #ffffff;
   margin: 10% auto; 
@@ -88,11 +101,13 @@ label {
   border-radius: 0;
 }
 
+/* Customizing Standard Bootstrap Modal Heading. */
 .modal-heading {
   margin: 0;
   color: dimgrey;
 }
 
+/* Styling for Font Awesome Close icon. */
 .closeIcon {
   cursor: pointer;
   float: right;
@@ -100,15 +115,18 @@ label {
   font-size: xx-large;
 }
 
+/* Setting grey input text box background. */
 input {
   background-color: #f1f1f1 !important;
 }
 
+/* Positioning for Create Post Submit, Sign In, Sign Up and Delete Confirmation buttons. */
 .btn-success {
   margin-top: 30px;
   border-radius: 0px;
 }
 
+/* Setting border radius to 0 for all buttons to match the screenshot. */
 .btn-danger {
   border-radius: 0px;
 }
@@ -117,15 +135,18 @@ input {
   border-radius: 0px !important;
 }
 
+/* Modal Heading */
 h3 {
   margin-top: 0px;
 }
 
+/* Non-Member message on sign in modal. */
 .nonMember {
   text-align: center;
   font-weight: bold;
 }
 
+/* Sign Up link on sign in modal. */
 #signUpLink {
   cursor: pointer;
 }
