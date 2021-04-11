@@ -51,6 +51,5 @@ textarea {
 /* Create Post Modal Size Adjustment */
 #createPostModalContent {
     width:80%;
-    height:72%;
     margin: 5% auto; !important;
 }
