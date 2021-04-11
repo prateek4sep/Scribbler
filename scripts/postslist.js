@@ -1,5 +1,4 @@
 var deletePostModal = document.getElementById("deletePostModal");
-var deleteIcon = document.getElementById("delete1");
 var cancelDelete = document.getElementById("cancelDelete");
 var confirmDelete = document.getElementById("confirmDelete");
 
