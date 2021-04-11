@@ -1,6 +1,14 @@
 var editButton = document.getElementById("editButton");
 var saveButton = document.getElementById("saveButton");
 
+var likeButton = document.getElementById("likeButton");
+var likedButton = document.getElementById("likedButton");
+var counterMessageNone = document.getElementById("counterMessageNone");
+var counterMessageSingle = document.getElementById("counterMessageSingle");
+var counterMessageMultiple = document.getElementById("counterMessageMultiple");
+var count = document.getElementById("count");
+var likes = 0;
+
 function editablePost(){
   var postBody = document.getElementById('postBody');
   var postText = postBody.innerText;
@@ -49,4 +57,40 @@ saveButton.onclick = function() {
   editButton.style.display = "block";
   updatedPost();
   updatedTitle();
+}
+
+likeButton.onclick = function() {
+  likeButton.style.display = "none";
+  likedButton.style.display = "block";
+  likes++;
+  if(likes==1){
+        counterMessageNone.style.display = "none";
+        counterMessageMultiple.style.display = "none";
+        counterMessageSingle.style.display = "block";
+  }
+  else{
+        counterMessageNone.style.display = "none";
+        counterMessageSingle.style.display = "none";
+        count.innerHTML = likes;
+        counterMessageMultiple.style.display = "block";
+  }
+}
+
+// IMPORTANT: Functionality has been added on Liked button just to check the case of multiple likes.
+// In real world clicking on 'Liked' would remove the like and different users liking would only be counted as multiple.
+likedButton.onclick = function() {
+  likedButton.style.display = "none";
+  likeButton.style.display = "block";
+  likes++;
+  if(likes==1){
+        counterMessageNone.style.display = "none";
+        counterMessageMultiple.style.display = "none";
+        counterMessageSingle.style.display = "block";
+  }
+  else{
+        counterMessageNone.style.display = "none";
+        counterMessageSingle.style.display = "none";
+        count.innerHTML = likes;
+        counterMessageMultiple.style.display = "block";
+  }
 }
