@@ -22,19 +22,17 @@ function editablePost(){
   var postText = postBody.innerText;
   if(postText.startsWith("UPDATED:\n"))
         postText = postText.replace("UPDATED:\n","");
-  var postBodyEdit = document.getElementById('postBodyEdit');
-  postBodyEdit.style.display = "block";
-  postBody.style.display = "none";
-  postBodyEdit.innerHTML = postText;
+  postBody.innerHTML = postText;
+  postBody.contentEditable = "true";
+  postBody.classList.add("edit");
 }
 
 function updatedPost(){
   var postBody = document.getElementById('postBody');
-  var postBodyEdit = document.getElementById('postBodyEdit');
-  var editedText = postBodyEdit.value.replaceAll("\n","<br/>");
-  postBodyEdit.style.display = "none";
-  postBody.style.display = "block";
+  var editedText = postBody.innerText.replaceAll("\n","<br/>");
   postBody.innerHTML = "UPDATED:<br/>"+editedText;
+  postBody.classList.remove("edit");
+  postBody.contentEditable = "false";
 }
 
 function editableTitle(){
@@ -42,19 +40,17 @@ function editableTitle(){
   var titleText = postTitle.innerText;
   if(titleText.startsWith("UPDATED: "))
         titleText = titleText.replace("UPDATED: ","");
-  var postTitleEdit = document.getElementById('postTitleEdit');
-  postTitleEdit.style.display = "block";
-  postTitle.style.display = "none";
-  postTitleEdit.innerHTML = titleText;
+  postTitle.innerHTML = titleText;
+  postTitle.contentEditable = "true";
+  postTitle.classList.add("edit");
 }
 
 function updatedTitle(){
   var postTitle = document.getElementById('postTitle');
-  var postTitleEdit = document.getElementById('postTitleEdit');
-  var editedText = postTitleEdit.value;
-  postTitleEdit.style.display = "none";
-  postTitle.style.display = "block";
+  var editedText = postTitle.innerText;
   postTitle.innerHTML = "UPDATED: "+editedText;
+  postTitle.classList.remove("edit");
+  postTitle.contentEditable = "false";
 }
 
 editButton.onclick = function() {
