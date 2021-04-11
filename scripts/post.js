@@ -31,7 +31,7 @@ function editablePost(){
 function updatedPost(){
   var postBody = document.getElementById('postBody');
   var postBodyEdit = document.getElementById('postBodyEdit');
-  var editedText = postBodyEdit.value;
+  var editedText = postBodyEdit.value.replaceAll("\n","<br/>");
   postBodyEdit.style.display = "none";
   postBody.style.display = "block";
   postBody.innerHTML = "UPDATED:<br/>"+editedText;

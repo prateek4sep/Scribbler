@@ -100,12 +100,12 @@ body {
 }
 
 #confirmDelete{
-   position: absolute; bottom:2px; left:10px;
+   position: absolute; bottom:10px; left:10px;
    width: 60px;
 }
 
 #cancelDelete {
-   position: absolute; bottom:2px; right:10px;
+   position: absolute; bottom:10px; right:10px;
    width: 60px;
 }
 

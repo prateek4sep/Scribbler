@@ -21,6 +21,7 @@ body {
 }
 
 .postButton{
+    position: relative; bottom:50px;
     background-color: orange;
     color: black;
     width: 150px; /* To make the buttons look equal in width. */
