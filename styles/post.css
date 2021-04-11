@@ -1,0 +1,93 @@
+#postContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#postTitleContainer {
+    text-align: center;
+}
+
+#postBodyContainer {
+    text-align: justify;
+}
+
+#postAuthor {
+    font-size: x-large;
+    font-family: 'Ubuntu Mono';
+}
+
+#editButton {
+    float: right;
+    font-size: large;
+}
+
+#saveButton {
+    display: none;
+    float: right;
+    font-size: large;
+}
+
+#likeButton {
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#likedButton {
+    display: none;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#postHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#counterMessageNone {
+    font-family: 'Ubuntu Mono';
+}
+
+#counterMessageSingle {
+    display: none;
+    font-family: 'Ubuntu Mono';
+}
+
+#counterMessageMultiple {
+    display: none;
+    font-family: 'Ubuntu Mono';
+}
+
+.btnShadow {
+    box-shadow: 0px 5px 5px 0px rgba(255,0,0,.2);
+}
+
+#postCommentContainer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#newComment {
+    width: 70%;
+    height: 10%;
+}
+
+#allComments {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.comment {
+    width: 70%;
+    border-style: solid;
+    border-color: lightgrey;
+    border-bottom-width: 10px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 10px;
+    padding: 10px;
+}

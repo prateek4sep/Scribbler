@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <!-- TODO: Include Font Awesome file here -->
+    <script src="https://use.fontawesome.com/f499a276b4.js"></script>
+
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/post.css">
+</head>
+
+<body>
+<!-- TODO: Include code for header here -->
+<div id="header">
+    <div id=headerText>
+        <div id="scribblerText"><h1>ScriBBler</h1></div>
+        <div id="tagLine"><h4>Explore, Imagine, Create</h4></div>
+    </div>
+    <div id="signingButtonsContainer">
+        <button id="signUpBtn" class="headerButton homepageButton">Sign Up</button>
+        <button id="signInBtn" class="headerButton homepageButton">Sign In</button>
+    </div>
+</div>
+
+<!-- Sign Up modal  -->
+<div id="signUpModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><span class="closeIcon" id="closeSignUp"><i>&times;</i></span></h3>
+            <h3 class="modal-heading">Get Started</h3>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required="true" />
+                </div>
+                <div class="form-group">
+                    <label for="new-username">Username</label>
+                    <input type="text" class="form-control" id="new-username" placeholder="Enter your username" required="true" />
+                </div>
+                <div class="form-group">
+                    <label for="new-password">Password</label>
+                    <input type="password" class="form-control" id="new-password" placeholder="Enter your password" required="true" />
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Re-enter your password" required="true" />
+                </div>
+                <button type="submit" class="btn btn-block btn-success">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Sign In Modal -->
+<div id="signInModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><span class="closeIcon" id="closeSignIn"><i>&times;</i></span></h3>
+            <h3 class="modal-heading">Welcome Back!</h3>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your username" required="true" />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required="true" />
+                </div>
+                <button type="submit" class="btn btn-block btn-success">Sign In</button>
+                <br>
+                <p class="nonMember">Not a member? <a id="signUpLink">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="postContainer">
+    <div id="postTitleContainer">
+        <b><h2 id="postTitle">Title of the post.</h2></b>
+    </div>
+    <div id="postHeader">
+        <div id="postAuthor">
+            Srishti Jain
+        </div>
+        <div id="editButton">
+            <button class="btn btn-danger btnShadow">Edit <i class="fa fa-edit"></i></button>
+        </div>
+        <div id="saveButton">
+            <button class="btn btn-danger btnShadow">Save <i class="fa fa-save"></i></button>
+        </div>
+    </div>
+    <div id="postBodyContainer">
+        <p id="postBody">Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post. Body of the post.</p>
+        <div id="likeButton">
+            <button class="btn btn-danger btnShadow"><i class="fa fa-thumbs-up"></i> Like</button>
+        </div>
+        <div id="likedButton">
+            <button class="btn btn-danger btnShadow"><i class="fa fa-thumbs-up"></i> Liked</button>
+        </div>
+        <div id="counterMessageNone">
+            Be the first one to like this!
+        </div>
+        <div id="counterMessageSingle">
+            1 person likes this!
+        </div>
+        <div id="counterMessageMultiple">
+            <span id="count">2</span> people like this!
+        </div>
+    </div>
+    <div id="postCommentContainer">
+        <div><textarea id="newComment" placeholder="Leave a Comment..." rows="4"></textarea></div>
+    </div>
+    <div id="commentButton">
+        <button class="btn btn-danger btnShadow">Comment</button>
+    </div>
+    <div id="allComments">
+        <h4><b>All Comments</b></h4>
+    </div>
+    <div id="commentsContainer">
+        <div class="comment">xyz</div>
+        <div class="comment">abc</div>
+    </div>
+</div>
+
+<script src="../scripts/common.js"></script>
+</body>
+
+</html>
