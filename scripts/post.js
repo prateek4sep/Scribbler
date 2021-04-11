@@ -9,6 +9,10 @@ var counterMessageMultiple = document.getElementById("counterMessageMultiple");
 var count = document.getElementById("count");
 var likes = 0;
 
+var commentButton = document.getElementById("commentButton");newComment
+var newComment = document.getElementById("newComment");
+var commentsContainer = document.getElementById("commentsContainer");
+
 function editablePost(){
   var postBody = document.getElementById('postBody');
   var postText = postBody.innerText;
@@ -93,4 +97,13 @@ likedButton.onclick = function() {
         count.innerHTML = likes;
         counterMessageMultiple.style.display = "block";
   }
+}
+
+commentButton.onclick = function() {
+    var newCommentText = newComment.value;
+    newComment.value = "";
+    var newHTML = "<div class=\"comment\">"+ newCommentText +"</div>";
+    if(newCommentText!=""){
+        commentsContainer.innerHTML = newHTML + commentsContainer.innerHTML;
+    }
 }
