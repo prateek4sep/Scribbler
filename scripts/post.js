@@ -16,6 +16,8 @@ var commentsContainer = document.getElementById("commentsContainer");
 function editablePost(){
   var postBody = document.getElementById('postBody');
   var postText = postBody.innerText;
+  if(postText.startsWith("UPDATED:\n"))
+        postText = postText.replace("UPDATED:\n","");
   var postBodyEdit = document.getElementById('postBodyEdit');
   postBodyEdit.style.display = "block";
   postBody.style.display = "none";
@@ -34,6 +36,8 @@ function updatedPost(){
 function editableTitle(){
   var postTitle = document.getElementById('postTitle');
   var titleText = postTitle.innerText;
+  if(titleText.startsWith("UPDATED: "))
+        titleText = titleText.replace("UPDATED: ","");
   var postTitleEdit = document.getElementById('postTitleEdit');
   postTitleEdit.style.display = "block";
   postTitle.style.display = "none";
@@ -83,8 +87,6 @@ likeButton.onclick = function() {
 // IMPORTANT: Functionality has been added on Liked button just to check the case of multiple likes.
 // In real world clicking on 'Liked' would remove the like and different users liking would only be counted as multiple.
 likedButton.onclick = function() {
-  likedButton.style.display = "none";
-  likeButton.style.display = "block";
   likes++;
   if(likes==1){
         counterMessageNone.style.display = "none";
