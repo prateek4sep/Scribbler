@@ -118,6 +118,7 @@ window.onload = function() {
         postAuthor.innerHTML = sessionAuthor;
     if(sessionTitle.length>0)
         postTitle.innerHTML = sessionTitle;
+    // IMPORTANT: Added same text multiple times for demonstration only, not needed in real world.
     if(sessionBody.length>0)
-        postBody.innerHTML = sessionBody;
+        postBody.innerHTML = sessionBody +  sessionBody +  sessionBody +  sessionBody +  sessionBody +  sessionBody;
 }
