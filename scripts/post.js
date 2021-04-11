@@ -1,6 +1,8 @@
+// Get Buttons for the Edit Post Feature
 var editButton = document.getElementById("editButton");
 var saveButton = document.getElementById("saveButton");
 
+// Get Buttons and Text elements for the Like Feature
 var likeButton = document.getElementById("likeButton");
 var likedButton = document.getElementById("likedButton");
 var counterMessageNone = document.getElementById("counterMessageNone");
@@ -9,14 +11,18 @@ var counterMessageMultiple = document.getElementById("counterMessageMultiple");
 var count = document.getElementById("count");
 var likes = 0;
 
+// Get Buttons and Text elements for the Comment Feature
 var commentButton = document.getElementById("commentButton");newComment
 var newComment = document.getElementById("newComment");
 var commentsContainer = document.getElementById("commentsContainer");
 
+// Get div elements for adding the post content dynamically
 var postAuthor = document.getElementById("postAuthor");
 var postTitle = document.getElementById("postTitle");
 var postBody = document.getElementById("postBody");
 
+// Sets the post body to be editable.
+// Handling done to add 'Updated' tag as per the screenshots, would be added only once even for multiple edits.
 function editablePost(){
   var postBody = document.getElementById('postBody');
   var postText = postBody.innerText;
@@ -27,6 +33,7 @@ function editablePost(){
   postBody.classList.add("edit");
 }
 
+// Updates the post body with the updated content.
 function updatedPost(){
   var postBody = document.getElementById('postBody');
   var editedText = postBody.innerText.replaceAll("\n","<br/>");
@@ -35,6 +42,8 @@ function updatedPost(){
   postBody.contentEditable = "false";
 }
 
+// Sets the post title to be editable.
+// Handling done to add 'Updated' tag as per the screenshots, would be added only once even for multiple edits.
 function editableTitle(){
   var postTitle = document.getElementById('postTitle');
   var titleText = postTitle.innerText;
@@ -45,6 +54,7 @@ function editableTitle(){
   postTitle.classList.add("edit");
 }
 
+// Updates the post title with the updated content.
 function updatedTitle(){
   var postTitle = document.getElementById('postTitle');
   var editedText = postTitle.innerText;
@@ -53,6 +63,7 @@ function updatedTitle(){
   postTitle.contentEditable = "false";
 }
 
+// Functionality of Edit button
 editButton.onclick = function() {
   saveButton.style.display = "block";
   editButton.style.display = "none";
@@ -60,6 +71,7 @@ editButton.onclick = function() {
   editableTitle();
 }
 
+// Functionality of Save button
 saveButton.onclick = function() {
   saveButton.style.display = "none";
   editButton.style.display = "block";
@@ -67,6 +79,7 @@ saveButton.onclick = function() {
   updatedTitle();
 }
 
+// Sets the post likes message as per the count.
 likeButton.onclick = function() {
   likeButton.style.display = "none";
   likedButton.style.display = "block";
