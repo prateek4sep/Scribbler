@@ -13,6 +13,10 @@ var commentButton = document.getElementById("commentButton");newComment
 var newComment = document.getElementById("newComment");
 var commentsContainer = document.getElementById("commentsContainer");
 
+var postAuthor = document.getElementById("postAuthor");
+var postTitle = document.getElementById("postTitle");
+var postBody = document.getElementById("postBody");
+
 function editablePost(){
   var postBody = document.getElementById('postBody');
   var postText = postBody.innerText;
@@ -108,4 +112,16 @@ commentButton.onclick = function() {
     if(newCommentText!=""){
         commentsContainer.innerHTML = newHTML + commentsContainer.innerHTML;
     }
+}
+
+window.onload = function() {
+    var sessionAuthor = sessionStorage.getItem("author");
+    var sessionTitle = sessionStorage.getItem("postTitle");
+    var sessionBody = sessionStorage.getItem("postBody");
+    if(sessionAuthor.length>0)
+        postAuthor.innerHTML = sessionAuthor;
+    if(sessionTitle.length>0)
+        postTitle.innerHTML = sessionTitle;
+    if(sessionBody.length>0)
+        postBody.innerHTML = sessionBody;
 }

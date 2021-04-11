@@ -16,6 +16,16 @@ for (var i = 0; i < posts.length; i++) (function(i){
         selectedPost = i;
     }
     ellipsisIcons[i].onclick = function() {
+        var author = posts[i].querySelector(".name > p").innerHTML;
+        var postTitle = posts[i].querySelector(".title").innerHTML;
+        var postBody = posts[i].querySelector(".wrap").innerHTML;
+        console.log(author);
+        console.log("author");
+        if(author.length>0) {
+            sessionStorage.setItem("author",author);
+            sessionStorage.setItem("postTitle",postTitle);
+            sessionStorage.setItem("postBody",postBody);
+         }
         location.href = "./post.html";
         selectedPost = i;
     }
