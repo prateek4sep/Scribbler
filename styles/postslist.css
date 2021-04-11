@@ -113,10 +113,13 @@ body {
     display: flex;
     justify-content: center;
     width:22% !important;
-    height:15%;
     margin: 5% auto; !important;
     font-family: 'Arial';
     font-size: 18px;
     text-padding: 10px;
     text-align: center;
+}
+
+.deleteDialogButtons {
+   padding-top: 40px;
 }
